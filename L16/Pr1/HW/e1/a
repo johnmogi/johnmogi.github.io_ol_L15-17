@@ -1,0 +1,11 @@
+
+
+// retrieve values
+
+// firstNumber.onchange = initilise;
+
+// function initilise(newVal){
+//     console.log(`The field's value is
+//     ${newVal.target.value} `);
+    
+// }

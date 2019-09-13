@@ -1,0 +1,10 @@
+.space{
+    height:25px;
+}
+.card{
+
+    width:28em;
+    margin: 5px auto;
+    display:block;
+}
+a.btn {color:#fff !important;}
