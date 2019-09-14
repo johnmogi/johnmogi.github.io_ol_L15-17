@@ -1,4 +1,24 @@
 
+// https://restcountries.eu/rest/v2/all?fields=capital
+
+// filter data array + populate select
+
+const smallCities = cities.slice(241) 
+let result = smallCities.map(a => a.capital);
+
+// for (let ii = 0; ii < result.length; ii++) {
+//     inputCity.innerHTML= ("option" + result[ii])
+
+// } NVM- try again later
+
+for(var i = 0; i < result.length; i++)
+{
+    var option = document.createElement("OPTION"),
+        txt = document.createTextNode(result[i]);
+    option.appendChild(txt);
+    option.setAttribute("value",result[i]);
+    inputCity.insertBefore(option,inputCity.lastChild);
+}
 
 // clean the slate
 function init(){
@@ -8,7 +28,7 @@ function init(){
 }
 // start buttons
 window.addEventListener("load", init)
-sub.addEventListener("click", draw);
+// sub.addEventListener("click", draw);
 
 function memory(){
     if (autoSizingCheck2.checked == true){
