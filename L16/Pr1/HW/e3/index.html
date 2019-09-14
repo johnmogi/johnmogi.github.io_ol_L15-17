@@ -44,7 +44,6 @@
                           </div>
                           <div class="col-md-4 mb-3">
                             <label for="validationCustom02">City</label>
-                          
                             <select class="custom-select" class="form-control" id="inputCity" placeholder="City" value="Otto" required>
                               <option></option>
                             </select>
@@ -58,39 +57,33 @@
                         </div>
                         <div class="form-row">
                           <div class="col-md-6 mb-3">
-                            <label for="validationCustom03">City</label>
-                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                            <label for="validationCustom03">Adress</label>
+                            <input type="text" class="form-control" id="inputAdress" placeholder="Adress" required>
                             <div class="invalid-feedback">
-                              Please provide a valid city.
+                              Please provide a valid Adress.
                             </div>
                           </div>
                           <div class="col-md-3 mb-3">
-                            <label for="validationCustom04">State</label>
-                            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                            <label for="validationCustom04">Gender</label>
+                            <input type="text" class="form-control" id="inputGender" placeholder="Gender" required>
                             <div class="invalid-feedback">
-                              Please provide a valid state.
+                              Whu?
                             </div>
                           </div>
                           <div class="col-md-3 mb-3">
-                            <label for="validationCustom05">Zip</label>
-                            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                            <label for="validationCustom05">Hobbies</label>
+                            <input type="text" class="form-control" id="inputHobbies" placeholder="Hobbies" required>
                             <div class="invalid-feedback">
-                              Please provide a valid zip.
+                              Tell us your hobbies
                             </div>
                           </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                              Agree to terms and conditions
-                            </label>
-                            <div class="invalid-feedback">
-                              You must agree before submitting.
-                            </div>
+                        
                           </div>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+
+
+
+                       
+                        <button class="btn btn-primary" id ="sub" type="button">Submit form</button>
                       </form>
                       
                       <script>
@@ -102,7 +95,7 @@
                           var forms = document.getElementsByClassName('needs-validation');
                           // Loop over them and prevent submission
                           var validation = Array.prototype.filter.call(forms, function(form) {
-                            form.addEventListener('submit', function(event) {
+                            sub.addEventListener('click', function(event) {
                               if (form.checkValidity() === false) {
                                 event.preventDefault();
                                 event.stopPropagation();
@@ -125,7 +118,7 @@
     <footer>
         <script src="./libs/elements.js"></script>
         <script src="./libs/data.js"></script>
-        <script src="e2.js"></script>
+        <script src="e3.js"></script>
     
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
