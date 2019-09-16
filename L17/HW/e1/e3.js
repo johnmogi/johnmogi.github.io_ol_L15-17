@@ -27,41 +27,27 @@ function lsClear(){
     localStorage.clear();
 
 }
-sub.addEventListener("click", draw);
+registrator.addEventListener("submit", draw);
 
 //generate
-function draw(){
-    lsClear();
+function draw(e){
+    // lsClear();
 
-if (
-    inputName.value == "" ||
-    inputAge.value == "" ||
-    inputCity.value == "" ||
-    inputAdress.value == "" ||
-    inputGender.value == "" ||
-    inputHobbies.value == "" 
-)
-{return} else{ 
-        localStorage.setItem('userName', inputs[0].value, );
+    for (let ii = 0; ii < inputs.length; ii++) {
+        if (
+            inputs[ii].value == ""
+        )
+        {return}         
+else{ 
+        // localStorage.setItem('userName', inputs[0].value, );
         for (let i = 0; i < inputs.length; i++) {
-            localStorage.setItem('', inputs[i].value, );            
+            localStorage.setItem(inputs[i].name, inputs[i].value );            
         }
-        // localStorage.setItem('inputs', JSON.stringify(a));
-    // localStorage.setItem('inputs', JSON.stringify(a));
-    // let arr = [];
-    // localStorage.setItem( 'inputs', JSON.stringify(arr));
-    // console.log(inputs)
-    // // let arr = [];
-    // for (let i = 0; i < inputs.length; i++) {
-    //     // localStorage.setItem( 'inputs', JSON.stringify());
-
-    //     // Storage.prototype.setObj = function(key, obj) {
-    //     //     return this.setItem(key, JSON.stringify(obj))
-    //     }
-        // localStorage.setItem( 'inputs', JSON.stringify());
+      
         
     }
-    // window.location.assign("success.html")
+    window.location.assign("success.html")
 
 // console.log("full")
+}
 }

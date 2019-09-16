@@ -18,11 +18,11 @@
                       <h5 class="card-title">מלאו את הפרטים שלכם</h5>
                       <p class="card-text" id="stage">שאו ברכה ושיר קטן בלבכם</p>
                       
-                      <form class="needs-validation" novalidate id="registrator">
+                      <form class="needs-validation" novalidate id="registrator" action="success.html" method="post">
                         <div class="form-row">
                           <div class="col-md-4 mb-3">
                             <label for="validationCustom01">שם</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="השם שלכם" value="" required>
+                            <input type="text" name="שם" class="form-control" id="inputName" placeholder="השם שלכם" value="" required>
                             <div class="invalid-feedback">
                               בבקשה מלאו את שמכם כפי שמופיע בתז שלכם 
                             </div>
@@ -36,7 +36,7 @@
                               <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroupPrepend">🌎</span>
                               </div>
-                              <input type="text" class="form-control" id="inputAge" placeholder=" ארץ המוצא שלכם" aria-describedby="inputGroupPrepend" required>
+                              <input type="text" name="גיל" class="form-control" id="inputAge" placeholder=" ארץ המוצא שלכם" aria-describedby="inputGroupPrepend" required>
                               <div class="invalid-feedback">
                                נסו שנית
                               </div>
@@ -44,7 +44,7 @@
                           </div>
                           <div class="col-md-4 mb-3">
                             <label for="validationCustom02">עיר</label>
-                            <select class="form-control custom-select" id="inputCity" placeholder="עיר" value="Otto" required>
+                            <select name="עיר" class="form-control custom-select" id="inputCity" placeholder="עיר" value="Otto" required>
                               <option></option>
                             </select>
 
@@ -58,21 +58,21 @@
                         <div class="form-row">
                           <div class="col-md-6 mb-3">
                             <label for="validationCustom03">כתובתכם</label>
-                            <input type="text" class="form-control" id="inputAdress" placeholder="המקום בו אתם גרים" required>
+                            <input type="text" name="כתובת" class="form-control" id="inputAdress" placeholder="המקום בו אתם גרים" required>
                             <div class="invalid-feedback">
                               בבקשה לציין מקום אמיתי
                             </div>
                           </div>
                           <div class="col-md-3 mb-3">
                             <label for="validationCustom04">מין</label>
-                            <input type="text" class="form-control" id="inputGender" placeholder="המין שלכם" required>
+                            <input type="text" name="מין" class="form-control" id="inputGender" placeholder="המין שלכם" required>
                             <div class="invalid-feedback">
                              אז מה אם יש לכם כאב ראש
                             </div>
                           </div>
                           <div class="col-md-3 mb-3">
                             <label for="validationCustom05">תחביבים</label>
-                            <input type="text" class="form-control" id="inputHobbies" placeholder="הדברים שאתם אוהבים לעשות" required>
+                            <input type="תחביבים" name="Hobbies" class="form-control" id="inputHobbies" placeholder="הדברים שאתם אוהבים לעשות" required>
                             <div class="invalid-feedback">
                               לא ציינתם ולו דבר, יא אללה אתכם
                             </div>
@@ -83,7 +83,7 @@
 
 
                        
-                        <button class="btn btn-success" id ="sub" type="button">שלח לי שקט</button>
+                        <button class="btn btn-success" id ="sub" type="submit">שלח לי שקט</button>
                       </form>
                       
                       <script>

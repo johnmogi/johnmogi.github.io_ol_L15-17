@@ -28,3 +28,29 @@ function memory(){
         
     }
 }
+
+
+if (
+    inputName.value == "" ||
+    inputAge.value == "" ||
+    inputCity.value == "" ||
+    inputAdress.value == "" ||
+    inputGender.value == "" ||
+    inputHobbies.value == "" 
+)
+{return} 
+
+
+  // localStorage.setItem('inputs', JSON.stringify(a));
+    // localStorage.setItem('inputs', JSON.stringify(a));
+    // let arr = [];
+    // localStorage.setItem( 'inputs', JSON.stringify(arr));
+    // console.log(inputs)
+    // // let arr = [];
+    // for (let i = 0; i < inputs.length; i++) {
+    //     // localStorage.setItem( 'inputs', JSON.stringify());
+
+    //     // Storage.prototype.setObj = function(key, obj) {
+    //     //     return this.setItem(key, JSON.stringify(obj))
+    //     }
+        // localStorage.setItem( 'inputs', JSON.stringify());
