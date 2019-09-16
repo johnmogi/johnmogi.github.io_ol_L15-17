@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="il">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>תרגיל 3- והפעם בעברית</title>
+    <link rel="stylesheet" href="libs/bootstrap.css">
+    <link rel="stylesheet" href="libs/custom.css">
+</head>
+<body>
+
+
+    <div class="container"></div>
+            <div class="card text-white bg-info mb-3">
+                    <div class="card-header">טופס הרשמה</div>
+                    <div class="card-body">
+                      <h5 class="card-title">מלאו את הפרטים שלכם</h5>
+                      <p class="card-text" id="stage">שאו ברכה ושיר קטן בלבכם</p>
+                      
+                      <form class="needs-validation" novalidate id="registrator">
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">שם</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="השם שלכם" value="" required>
+                            <div class="invalid-feedback">
+                              בבקשה מלאו את שמכם כפי שמופיע בתז שלכם 
+                            </div>
+                            <div class="valid-feedback">
+                              מצוין!
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustomUsername">לאום</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">🌎</span>
+                              </div>
+                              <input type="text" class="form-control" id="inputAge" placeholder=" ארץ המוצא שלכם" aria-describedby="inputGroupPrepend" required>
+                              <div class="invalid-feedback">
+                               נסו שנית
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom02">עיר</label>
+                            <select class="form-control custom-select" id="inputCity" placeholder="עיר" value="Otto" required>
+                              <option></option>
+                            </select>
+
+
+                            <div class="valid-feedback">
+                              אדיר, אבל ממש!
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationCustom03">כתובתכם</label>
+                            <input type="text" class="form-control" id="inputAdress" placeholder="המקום בו אתם גרים" required>
+                            <div class="invalid-feedback">
+                              בבקשה לציין מקום אמיתי
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="validationCustom04">מין</label>
+                            <input type="text" class="form-control" id="inputGender" placeholder="המין שלכם" required>
+                            <div class="invalid-feedback">
+                             אז מה אם יש לכם כאב ראש
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="validationCustom05">תחביבים</label>
+                            <input type="text" class="form-control" id="inputHobbies" placeholder="הדברים שאתם אוהבים לעשות" required>
+                            <div class="invalid-feedback">
+                              לא ציינתם ולו דבר, יא אללה אתכם
+                            </div>
+                          </div>
+                        
+                          </div>
+
+
+
+                       
+                        <button class="btn btn-success" id ="sub" type="button">שלח לי שקט</button>
+                      </form>
+                      
+                      <script>
+                      // Example starter JavaScript for disabling form submissions if there are invalid fields
+                      (function() {
+                        'use strict';
+                        window.addEventListener('load', function() {
+                          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                          var forms = document.getElementsByClassName('needs-validation');
+                          // Loop over them and prevent submission
+                          var validation = Array.prototype.filter.call(forms, function(form) {
+                            sub.addEventListener('click', function(event) {
+                              if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                              }
+                              form.classList.add('was-validated');
+                            }, false);
+                          });
+                        }, false);
+                      })();
+                      </script>
+
+                    </div>
+                  </div>
+
+
+
+          
+    </div>
+
+    <footer>
+        <script src="./libs/elements.js"></script>
+        <script src="./libs/data.js"></script>
+        <script src="./e3.js"></script>
+    
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>

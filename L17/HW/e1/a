@@ -1,0 +1,30 @@
+    // for (let i = 0; i < inputs.length; i++) {
+       
+    //     if (inputs[i].value == ""){
+    //         return
+    //     }
+    //     else{
+    //         window.location.assign("success.html")
+    //     }
+        
+    // }
+// inputName inputAge inputCity inputAdress inputGender inputHobbies
+
+
+
+function memory(){
+    if (autoSizingCheck2.checked == true){
+        h5[0].innerText = ("I got you in my memory- Have a nice day")
+
+        if (input1.value == "" || input2.value == "") {
+       return 
+               
+    } 
+
+    localStorage.setItem( 'inputs', JSON.stringify( arr ) );
+    // localStorage.setItem('userName', inputs[0].value, );
+    // localStorage.setItem('PassWord', inputs[1].value, );
+
+        
+    }
+}

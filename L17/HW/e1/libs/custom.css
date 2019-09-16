@@ -1,0 +1,8 @@
+.card{
+    max-width: 50rem;
+    margin: 10px auto;
+}
+body{
+    direction:rtl;
+    text-align: right;
+}
