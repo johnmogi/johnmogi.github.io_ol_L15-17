@@ -21,14 +21,24 @@ function validateIntNum(lengthInputID) {
 
 // helper - function to create a line 
 function createLineOfAstrixsByLength(len) {
+
+    let x= 10;
+    let y = 50;
+
     var lineStr = new String();
     for(var i=0;i<len;i++) {
-        lineStr += "*";
+        // lineStr += "*";
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        lineStr += ctx.strokeText("*", i*x,  i*y);
+        // lineStr += ctx.strokeText("*", x* i, y * i);
+        
     }
     return lineStr;
 }
 
-function showLengthTrin(elemID,lengthInputID) {
+function showLengthTrin(myCanvas,lengthInputID) {
 
     var validateIntNumVar = validateIntNum(lengthInputID);
     // validateIntNumVar = 4;
@@ -40,15 +50,17 @@ function showLengthTrin(elemID,lengthInputID) {
         const lineOfAst = createLineOfAstrixsByLength(validateIntNumVar);
                 
         for(var i=0;i<=validateIntNumVar;i++) {
-            trinStr += "<br/>"+ lineOfAst.substr(0,i);
+            // trinStr += "<br/>"+ lineOfAst.substr(0,i);
+           
+            trinStr += "<br/>"+ lineOfAst;
         }
         
 
-        document.getElementById(elemID).innerHTML = trinStr;
+        document.getElementById(myCanvas).innerHTML = trinStr;
     } else {
         alert("input is not valid");
         // clean elem id content
-        document.getElementById(elemID).innerHTML = "";
+        document.getElementById(myCanvas).innerHTML = "";
     }
     
 }
