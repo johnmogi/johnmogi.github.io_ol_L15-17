@@ -1,23 +1,23 @@
 
+const newBody = document.getElementById("newBody")
 
-    // localStorage.getItem('userName' );
-    // console.log()
 
-    for(var i=0;i<inputs.length; i++) {
-        var key = inputs.key ( i ) ;
-        var item = JSON.parse( localStorage.getItem( key ) );
-      }
-      
-      stage.innerText = (
-        "your username is: "  
-        +
-        localStorage.userName
-        +
-        " & Your Password is: "
-        +
-        localStorage.PassWord 
-      )
-        
-    // h5.innerText = JSON.stringify(localStorage, userName, PassWord);
-// h5.innerTEXT = (localStorage.getItem(Parse('userName' )))
+// iterate localStorage
+for (var i = 0; i < localStorage.length; i++) {
+
+  // set iteration key name
+  var key = localStorage.key(i);
+
+  // use key name to retrieve the corresponding value
+  var value = localStorage.getItem(key);
+
+  // console.log the iteration key and value
+  newBody.innerHTML +=(  key + ": "  + value  + '<br/>');  
+
+}
+
+
+
+
+
 
