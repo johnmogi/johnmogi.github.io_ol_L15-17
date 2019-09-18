@@ -1,0 +1,13 @@
+.space{
+    height:25px;
+}
+.container{
+    max-width: 1200PX;
+    margin:25px auto;
+    display: block;
+
+}
+h1{
+    text-align: center;
+    font-size:3em;
+}
