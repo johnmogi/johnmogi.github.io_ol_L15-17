@@ -1,0 +1,20 @@
+
+// WRONG
+// sub.addEventListener("click",function(){ 
+//     alert("MEow")
+// });
+// RIGHT
+
+//     sub.onclick = function(){clickSub};
+
+
+// function clickSub(){
+//     alert("MEow")
+//     validate();
+// }
+// function validate(){
+    
+//     if(inputCat.value = ""){
+//         alert("MEow")
+//     }
+// }
